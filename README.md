@@ -44,7 +44,8 @@ Logistic Regression performed better in this financial prediction setting.
 
 ## 🖥️ Dashboard Preview
 
-(Add your screenshot here)
+![alt text](image.png)
+
 
 ---
 
