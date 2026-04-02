@@ -1,35 +1,55 @@
-# Stock SQL AI Pipeline
+# 📈 AI-Powered Stock Prediction Pipeline
 
-This project builds an end-to-end financial data pipeline using Python, SQLite, and machine learning to analyze AAPL stock data and predict next-day price movement.
+This project builds an  data pipeline that analyzes stock market data and predicts next-day price movement using machine learning.
 
-## Features
-- Downloads 1 year of AAPL and SPY stock data using yfinance
-- Engineers financial features including:
-  - daily returns
-  - 10-day and 20-day moving averages
-  - 5-day volatility
-  - RSI(14)
-  - SPY benchmark returns
-  - relative strength versus SPY
-- Stores cleaned and engineered data in a SQLite database
-- Trains a logistic regression model to predict whether AAPL will rise the next trading day
-- Evaluates performance using accuracy, precision, recall, and F1-score
+## 🚀 Features
 
-## Tools Used
+- SQL-based data pipeline storing AAPL + SPY market data
+- Feature engineering:
+  - RSI (Relative Strength Index)
+  - Moving averages (MA10, MA20)
+  - Volatility
+  - Relative strength vs SPY
+- Machine learning models:
+  - Logistic Regression
+  - Random Forest
+- Real-time prediction dashboard built with Streamlit
+- Displays:
+  - Market snapshot
+  - AI prediction (UP / DOWN)
+  - Probability confidence
+  - Model performance comparison
+
+---
+
+## 🧠 Tech Stack
+
 - Python
 - pandas
-- SQLite
-- yfinance
 - scikit-learn
+- Streamlit
+- SQLite
 - matplotlib
 
-## Model Result
-The initial logistic regression model achieved about 60% accuracy on test data.
+---
 
-## Project Structure
-- `data_pipeline.py` → downloads and engineers AAPL and SPY features
-- `model.py` → trains and evaluates the machine learning model
-- `data/market_data.db` → SQLite database storing market data and engineered features
+## 📊 Model Results
 
-## Why This Project Matters
-This project demonstrates data engineering, SQL integration, financial feature engineering, benchmark comparison, and machine learning in one workflow.
+- Logistic Regression Accuracy: ~60%
+- Random Forest Accuracy: ~47%
+
+Logistic Regression performed better in this financial prediction setting.
+
+---
+
+## 🖥️ Dashboard Preview
+
+(Add your screenshot here)
+
+---
+
+## ⚙️ How to Run
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
