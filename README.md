@@ -46,11 +46,8 @@ Logistic Regression performed better in this financial prediction setting.
 
 ![Dashboard](dashboard.png)
 
-## 🖥️ Dashboard Preview
 
-![Dashboard](dashboard.png)
 *AI-powered dashboard showing real-time stock prediction, probabilities, and model performance.*
-
 ---
 
 ## ⚙️ How to Run
